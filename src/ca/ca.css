@@ -1,0 +1,538 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+}
+#cp-ambd a {
+  all: unset;
+}
+#cp-ambd nav {
+  width: 100%;
+  padding: 20px 5px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 1.5em;
+  color: white;
+  display: flex;
+  cursor: pointer;
+  flex-wrap: wrap;
+  z-index: 9;
+  border-bottom: 2px solid rgba(116, 192, 255, 0.466);
+  transition: all 0.5s;
+}
+.nav-highlight{
+  background-color: white !important;
+  color: #000 !important;
+}
+#cp-ambd #logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
+  letter-spacing: 0.25em;
+  margin-left: 2.75em;
+  text-transform: uppercase;
+  mask-image: linear-gradient(
+    -75deg,
+    rgba(0, 0, 0, 0.6) 30%,
+    #000 50%,
+    rgba(0, 0, 0, 0.6) 70%
+  );
+  -webkit-mask-image: linear-gradient(
+    -75deg,
+    rgba(0, 0, 0, 0.6) 30%,
+    #000 50%,
+    rgba(0, 0, 0, 0.6) 70%
+  );
+  mask-size: 200%;
+  -webkit-mask-size: 200%;
+  animation: shine 3s infinite;
+}
+@keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+#cp-ambd #logo img {
+  width: 1.25em;
+  height: 1.25em;
+  margin-left: 0.25em;
+  margin-right: 0.5em;
+}
+#cp-ambd #navList {
+  display: flex;
+  margin-left: auto;
+  margin-right: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  transition: height 0.5s;
+}
+#cp-ambd #navList div {
+  margin: 0 20px;
+  transition: all 0.5s;
+}
+#cp-ambd #navList div:hover {
+  color: #39ff14;
+  transform: scale(1.3);
+}
+#cp-ambd #collapseBtn {
+  position: absolute;
+  top: 21px;
+  right: 20px;
+  font-size: 1.5em;
+  display: none;
+}
+#cp-ambd .fullHeight {
+  height: auto !important;
+}
+
+#cp-ambd #home {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  background: url("./background.jpg");
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+#cp-ambd #home #home-mask{
+  width: 100%;
+  height: 100%;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.80) 30%, rgba(0,0,0,0.80) 70%, rgba(0,0,0,0.40) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 77px;
+}
+#cp-ambd #home #tnLogo{
+    width: 300px;
+    margin-bottom: 15px;
+}
+#cp-ambd #home #theme{
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  width: 80%;
+  max-width: 900px;
+  text-align: center;
+}
+#cp-ambd #register-btn{
+  margin-top: 25px;
+  font-size: 22px;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+
+#cp-ambd #social-links{
+  color: white;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  padding: 20px;
+}
+.link-highlight{
+  background-color: rgba(0, 0, 0, 0.63);
+}
+#cp-ambd #social-links svg{
+  display: block;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+
+#cp-ambd section{
+  padding: 70px 8%;
+  padding-bottom: 100px;
+}
+#cp-ambd section.dark{
+  background-color: #f4f4f4;
+}
+
+#cp-ambd section .heading{
+  text-align: center;
+  font-size: 3em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 30px 0;
+  width: 100%;
+}
+#cp-ambd section .content{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+#cp-ambd #about .content{
+  font-size: 26px;
+  word-spacing: 8px;
+  line-height: 40px;
+}
+#cp-ambd section .content-image{
+  width: 50%;
+  height: 550px;
+  background-color: #39ff14;
+}
+#cp-ambd #benefits #benefits-list{
+  width: 50%;
+  padding-left: 50px;
+}
+#cp-ambd #benefits #benefits-list .benefit{
+  display: flex;
+  margin-bottom: 50px;
+}
+#cp-ambd #benefits #benefits-list .benefit-icon{
+  font-size: 40px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+#cp-ambd #benefits #benefits-list .benefit-content .benefit-head{
+  font-size: 30px;
+}
+#cp-ambd #benefits #benefits-list .benefit-content .benefit-desc{
+  font-size: 22px;
+  word-spacing: normal;
+  line-height:30px;
+  color: #848484;
+}
+
+#cp-ambd #responsibilities .res-card{
+  width: 350px;
+  height: 300px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgba(253, 253, 253, 0.603);
+  box-shadow: 0px 0px 10px rgb(153, 153, 153);
+  padding: 10px;
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+#cp-ambd #responsibilities .res-card .icon{
+  font-size: 100px;
+}
+#cp-ambd #responsibilities .res-card .head{
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+#cp-ambd #responsibilities .res-card .info{
+  font-size: 18px;
+}
+
+#cp-ambd .reward-card{
+  width: 25%;
+  height: 400px;
+  padding-top: 15px;
+  text-align: center;
+}
+#cp-ambd .reward-card:nth-of-type(odd){
+  background-color: rgb(140, 255, 255);
+}
+#cp-ambd .reward-card:nth-of-type(even){
+  background-color: rgb(255, 173, 173);
+}
+#cp-ambd .reward-card .number{
+  font-size: 40px;
+  font-weight: bold;
+}
+#cp-ambd .reward-card .number::after{
+  display: block;
+  content: "";
+  width: 60%;
+  border-top: 5px dashed black;
+  height: 10px;
+  margin: 15px 0;
+}
+#cp-ambd .reward-card .head{
+  font-size: 30px;
+  font-weight: bold;
+}
+#cp-ambd .reward-card .icon{
+  font-size: 60px;
+  margin: 20px 0;
+}
+#cp-ambd .reward-card .info{
+  font-size: 22px;
+  padding: 0 10px;
+}
+
+#cp-ambd #registration .content{
+  font-size: 26px;
+}
+#cp-ambd #registration .head{
+  width: 20%;
+  text-align: center;
+  font-weight: bold;
+}
+#cp-ambd #registration .info{
+  width: 80%;
+  word-spacing: 5px;
+  line-height: 30px;
+  margin-bottom: 70px;
+}
+
+
+@media only screen and (max-width: 1360px) {
+  #cp-ambd #logo {
+    margin-left: 20px;
+  }
+  #cp-ambd section .content-image{
+    height: 460px;
+  }
+  #cp-ambd #benefits #benefits-list{
+    padding-left: 30px;
+  }
+  #cp-ambd #benefits #benefits-list .benefit{
+    margin-bottom: 30px;
+  }
+  #cp-ambd #benefits #benefits-list .benefit-icon{
+    font-size: 30px;
+  }
+  #cp-ambd #benefits #benefits-list .benefit-content .benefit-head{
+    font-size: 25px;
+  }
+  #cp-ambd #benefits #benefits-list .benefit-content .benefit-desc{
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 1320px) {
+  #cp-ambd nav {
+    display: block;
+  }
+  #cp-ambd #logo {
+    margin-bottom: 20px;
+  }
+  #cp-ambd #navList div {
+    margin: 0 0.75em;
+  }
+  #cp-ambd #responsibilities .res-card{
+    width: 300px;
+    height: 350px;
+    padding: 20px;
+  }
+  #cp-ambd section{
+    padding: 70px 4%;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  #cp-ambd .reward-card{
+    width: 40%;
+    height: 400px;
+    padding-top: 15px;
+    margin-bottom: 30px;
+  }
+  #cp-ambd .reward-card:nth-of-type(3){
+    background-color: rgb(255, 173, 173);
+  }
+  #cp-ambd .reward-card:nth-of-type(4){
+    background-color: rgb(140, 255, 255);
+  }
+  #cp-ambd section{
+    padding: 70px 4%;
+    padding-bottom: 100px;
+  }
+  #cp-ambd section .content-image{
+    height: 430px;
+  }
+  #cp-ambd #benefits #benefits-list{
+    padding-left: 20px;
+  }
+  #cp-ambd #benefits #benefits-list .benefit-icon{
+    font-size: 26px;
+  }
+  #cp-ambd #benefits #benefits-list .benefit-content .benefit-head{
+    font-size: 20px;
+  }
+  #cp-ambd #benefits #benefits-list .benefit-content .benefit-desc{
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  #cp-ambd #navList {
+    height: 0;
+    overflow-y: hidden;
+    width: 100%;
+    display: block;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  #cp-ambd #navList div {
+    margin: 1vh auto;
+    font-size: 1.25em;
+    width: fit-content;
+  }
+  #cp-ambd #navList div:first-child {
+    margin-top: 3vh;
+  }
+  #cp-ambd #logo {
+    margin: auto;
+    width: 100%;
+    font-size: 1.75em;
+  }
+  #cp-ambd #collapseBtn {
+    display: block;
+    top: 27px;
+  }
+  #cp-ambd section .content-image{
+    width: 80%;
+    margin-top: 50px;
+  }
+  #cp-ambd #benefits #benefits-list{
+    width: 90%;
+    padding-left: 0;
+  }
+  #cp-ambd #benefits #benefits-list .benefit{
+    margin-bottom: 50px;
+  }
+  #cp-ambd #benefits #benefits-list .benefit-icon{
+    font-size: 35px;
+  }
+  #cp-ambd #benefits #benefits-list .benefit-content .benefit-head{
+    font-size: 26px;
+  }
+  #cp-ambd #benefits #benefits-list .benefit-content .benefit-desc{
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #cp-ambd #logo {
+    font-size: 1.8em;
+  }
+  #cp-ambd #collapseBtn {
+    font-size: 1.5em;
+    top: 29px;
+  }
+  #cp-ambd #navList div {
+    font-size: 1.3em;
+  }
+  #cp-ambd #registration .head{
+    width: 90%;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  #cp-ambd #registration .info{
+    width: 90%;
+  }
+  #cp-ambd #social-links{
+    padding: 13px;
+  }
+  #cp-ambd #social-links svg{
+    display: inline-block;
+    margin-right: 13px;
+    margin-bottom: 0;
+    padding-right: 0;
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 620px) {
+  #cp-ambd #logo {
+    margin-left: 0;
+  }
+  #cp-ambd .reward-card{
+    width: 80%;
+    height: 400px;
+    padding-top: 15px;
+    margin-bottom: 30px;
+  }
+  #cp-ambd .reward-card:nth-of-type(odd){
+    background-color: rgb(255, 173, 173);
+  }
+  #cp-ambd .reward-card:nth-of-type(even){
+    background-color: rgb(140, 255, 255);
+  }
+}
+@media only screen and (max-width: 550px) {
+  #cp-ambd #logo {
+    font-size: 1.65em;
+  }
+  #cp-ambd #collapseBtn {
+    font-size: 1.3em;
+    top: 27px;
+  }
+  #cp-ambd #navList div {
+    font-size: 1.2em;
+  }
+  #cp-ambd section .heading{
+    font-size: 2.5em;
+  }
+  #cp-ambd #about .content{
+    font-size: 22px;
+    word-spacing: 5px;
+    line-height: 30px;
+  }
+  #cp-ambd section .content-image{
+    height: 350px;
+  }
+  #cp-ambd #home #tnLogo{
+    width: 200px;
+  }
+  #cp-ambd #home #theme{
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #cp-ambd #logo {
+    font-size: 1.3em;
+    margin-left: -0.5em;
+  }
+  #cp-ambd #collapseBtn {
+    font-size: 1.2em;
+    top: 25px;
+  }
+  #cp-ambd #navList div {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #cp-ambd section .heading{
+    font-size: 2em;
+  }
+  #cp-ambd #logo {
+    font-size: 1.2em;
+  }
+  #cp-ambd #collapseBtn {
+    font-size: 1.1em;
+  }
+  #cp-ambd section .content-image{
+    height: 250px;
+  }
+  #cp-ambd #benefits #benefits-list .benefit{
+    margin-bottom: 40px;
+  }
+  #cp-ambd #benefits #benefits-list .benefit-icon{
+    font-size: 30px;
+  }
+  #cp-ambd #benefits #benefits-list .benefit-content .benefit-head{
+    font-size: 23px;
+  }
+  #cp-ambd #benefits #benefits-list .benefit-content .benefit-desc{
+    font-size: 20px;
+    line-height: 23px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  #cp-ambd #logo {
+    font-size: 1em;
+  }
+  #cp-ambd #collapseBtn {
+    font-size: 0.8em;
+  }
+  #cp-ambd #navList div {
+    font-size: 0.8em;
+  }
+}
