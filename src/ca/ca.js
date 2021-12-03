@@ -80,7 +80,7 @@ const ca = () => {
           <a href="#registration">
             <div onClick={expand}>Registration</div>
           </a>
-          <a href="">
+          <a href="/">
             <div onClick={expand}>Contact Us</div>
           </a>
         </div>
